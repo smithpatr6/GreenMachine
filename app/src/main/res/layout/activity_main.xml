@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <Button
+        android:text="Start Journey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startstop" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="387dp"
+        android:elevation="1dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/red"
+            android:id="@+id/red" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/yellow"
+            android:id="@+id/yellow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/green"
+            android:id="@+id/green" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:text="Sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sound"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:text="Vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vibrate"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
